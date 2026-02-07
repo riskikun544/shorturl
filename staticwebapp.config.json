@@ -1,0 +1,46 @@
+{
+  "routes": [
+    {
+      "route": "/gh",
+      "redirect": "https://github.com",
+      "statusCode": 302
+    },
+    {
+      "route": "/yt",
+      "redirect": "https://youtube.com"
+    },
+    {
+      "route": "/az",
+      "redirect": "https://azure.microsoft.com"
+    },
+    {
+      "route": "/g",
+      "redirect": "https://google.com"
+    },
+    {
+      "route": "/x",
+      "redirect": "https://twitter.com"
+    },
+    {
+      "route": "/ig",
+      "redirect": "https://instagram.com"
+    },
+    {
+      "route": "/li",
+      "redirect": "https://linkedin.com"
+    },
+    {
+      "route": "/cv",
+      "redirect": "https://your-resume-link.com",
+      "statusCode": 301
+    },
+    {
+      "route": "/blog/*",
+      "redirect": "https://your-blog.com/:splat",
+      "statusCode": 301
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
+}
